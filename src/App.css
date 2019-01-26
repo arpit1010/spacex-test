@@ -1,32 +1,294 @@
-.App {
-  text-align: center;
+
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    font-family: 'Josefin Sans', 'Verdana', sans-serif;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/* NAVBAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
+    height: 4.5em;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navblock-1{
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+    text-decoration: none; 
+    color: white;
+    font-family: Verdana;
+    font-weight: medium;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+    margin: 0;
+    padding: 0em 1em 0em 0em;
+    width: 35%;
+}
+
+.nav-products-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-products-links a{
+    transition: 1s ease;
+    padding: 0.5em;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.nav-products-links a:hover{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: goldenrod;
+}
+
+.navblock-2{
+    display: flex;
+    align-items: center;
+}
+
+.navblock-2 a{
+    padding: 0.5em;
+    color: grey;
+    font-size: 0.9em;
+    transition: 1s ease;
+    font-weight: bold;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.navblock-2 a:hover{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: grey;
+}
+
+/* HEADER */
+/* Jumbotron */
+.jumbotron{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+    height: 48em;
+    width: 100%;
+    z-index: -1;
+}
+
+.jumbotron-img-1{
+    background-image: url("/images/spacex-header1.jpg");
+    background-position-y: 70px;
+    transition: all 1s ease-in-out;
+}
+
+.jumbotron-img-2{
+    background-image: url("/images/spacex-header2.jpg");
+    background-position-y: 40px;
+    transition: all 1s ease-in-out;
+}
+
+.jumbotron-img-3{
+    background-image: url("/images/spacex-header3.jpg");
+    background-position-y: -190px;
+    transition: all 1s ease-in-out;
+}
+
+/* HEADER MAIN TITLE */
+.header-title{
+    margin-top: 33.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    height: 6em;
+}
+
+.header-title-divleft{
+    width: 35em;
+}
+
+.header-title-divleft > h2{
+transition-delay: 2s ease;
+}
+
+.header-title-divleft > h2:hover{
+    text-decoration: underline;
+}
+
+.header-title button {
+        width: 10%;
+        height: 3.5em;
+        border-radius: 5%;
+        transition: 1s ease;
+        cursor: pointer;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+}
+
+.header-title button:hover{
+    border-color: goldenrod;
+    border-width: 2px;
+}
+
+/* HEADER SWITCHERS */
+.header-switch{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 4em;
+}
+
+.header-switch div{
+    padding: 0.8em 3em;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.header-switch .number{
+    color: grey;
+    padding-right: 0.8em;
+}
+
+.header-selected{
+    background-color: rgba(70, 63, 63, 0.7);
+}
+
+/* ABOUT */
+.About{
+    padding: 0px 160px;
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.card-block{
+   display: flex;
+   justify-content: space-around;
+   margin: 3em 0em 10em 0em;
+   width: 80%;
+   flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+}
+
+.card img{
+    width: 15em;
+    height: 7.5em;
+    padding: 1.5em 1.5em 0.3em 1.5em;
+    cursor: pointer;
+}
+
+.card-text {
+    padding: 0em 1.5em;
+    height: 4.5em;
+}
+
+.card-text h3{
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.card-text h3:hover{
+    text-decoration: underline;
+}
+
+.card a {
+    text-decoration: none;
+    color: #3569a4;
+    font-size: 0.7em;
+    cursor: pointer;
+    padding: 0em 2.4em;
+    border-width: 0px 0px 2px 0px;
+    transition: 1s ease;
+}
+
+.card a:hover{
+text-decoration: underline;
+}
+
+/* PREFOOTER */
+
+.Prefooter{
+    display: flex;
+    justify-content: center;
+    background-color: #181c1f;
+}
+
+.prefooter-div{
+    padding: 1em 4em 1em 4em;
+}
+
+.prefooter-div h4{
+    color: white;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.prefooter-div p {
+    color: grey;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.prefooter-logoP{
+    color: white!important;
+}
+
+/* FOOTER */
+
+footer{
+display: flex;
+justify-content: space-around;
+font-size: 0.7em;
+background-color: black;
+}
+
+footer div{
+    display: flex;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.footerFollow{
+    color: grey;
+    cursor: pointer;
+}
+
+footer p{
+    padding: 0em 1em;
+    color:#ccc;
+    cursor: pointer;
+}
+
+footer p nth:child(1){
+    color: grey;
 }
