@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 import {connect} from "react-redux";
 import {headerAction} from "../actions/headerAction"
 
@@ -21,6 +22,7 @@ class Header extends Component{
         console.log(this.props)
         return(
             <header>
+
                     <div className={this.props.jumboImg === 1 ? "jumbotron jumbotron-img-1" : 
                                     this.props.jumboImg===2 ? "jumbotron jumbotron-img-2":
                                     "jumbotron jumbotron-img-3"}>    

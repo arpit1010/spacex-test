@@ -18,7 +18,6 @@ class App extends Component {
       <Switch>
         <Route exact path="/" render={()=> <Homepage />}/>
         <Route component={NotFound}/>
-    
       </Switch>
 
       <Footer/>

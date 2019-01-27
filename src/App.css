@@ -91,7 +91,7 @@ nav a {
 
 .jumbotron-img-1{
     background-image: url("/images/spacex-header1.jpg");
-    background-position-y: 70px;
+    background-position-y: 0em;
     transition: all 1s ease-in-out;
 }
 
@@ -185,7 +185,7 @@ transition-delay: 2s ease;
 .card-block{
    display: flex;
    justify-content: space-around;
-   margin: 3em 0em 10em 0em;
+   margin: 3em 0em 8em 0em;
    width: 80%;
    flex-wrap: wrap;
 }
@@ -194,6 +194,7 @@ transition-delay: 2s ease;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2em;
 }
 
 .card-img{
@@ -222,12 +223,18 @@ transition-delay: 2s ease;
     text-decoration: underline;
 }
 
+.about-learn{
+    display: flex;
+    align-items: center;
+}
+
 .card a {
     text-decoration: none;
     color: #3569a4;
     font-size: 0.7em;
     cursor: pointer;
     padding: 0em 2.4em;
+    padding-right: 0.5em;
     border-width: 0px 0px 2px 0px;
     transition: 1s ease;
 }
