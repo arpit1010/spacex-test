@@ -1,7 +1,8 @@
 const initState = {
     jumboImg: 1,
     headerClass: 1,
-    aboutArrow: 0
+    aboutArrow: 0,
+    mobileStyle: "hide"
 }
 
 const rootReducer = (state = initState, action) => {
@@ -16,6 +17,16 @@ const rootReducer = (state = initState, action) => {
         return {
             ...state,
             aboutArrow: action.number
+        }
+        case "Hamburger":
+        return{
+            ...state,
+            mobileStyle: action.display
+        }
+        case "Hamburger-close":
+        return {
+            ...state,
+            mobileStyle: action.display
         }
          default: return state;
         }

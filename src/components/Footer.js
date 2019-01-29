@@ -4,6 +4,7 @@ import React from "react"
 const Footer = () => {
     return (
         <footer>
+            
             <div>
                 <p>FOLLOW SPACEX</p>
                 <p>TWITTER</p>
@@ -15,6 +16,7 @@ const Footer = () => {
             <div>
                 <p>© 2017 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
             </div>
+
         </footer>
     )
 }

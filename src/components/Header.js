@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import Slide from 'react-reveal/Slide';
-import Fade from 'react-reveal/Fade';
 import {connect} from "react-redux";
 import {headerAction} from "../actions/headerAction"
+import NavbarMobile from "./NavbarMobile.js"
 
 class Header extends Component{
 
@@ -11,11 +11,17 @@ class Header extends Component{
     }
     
     componentDidMount(){
+        console.log(`nount`)
         var number = 1;
-        setInterval(()=>{
+        this.interval = setInterval(()=>{
             number < 3 ? number ++ : number = 1;
             this.switchImg(number)
         }, 7000)
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval)
+        this.props.switchImg(1)
     }
 
     render(){
@@ -27,6 +33,9 @@ class Header extends Component{
                                     this.props.jumboImg===2 ? "jumbotron jumbotron-img-2":
                                     "jumbotron jumbotron-img-3"}>    
                     </div>
+
+                    {this.props.mobileStyle==="show"? <NavbarMobile /> : null}
+                    
                     
                     <div className="header-title">
                     <Slide bottom>
@@ -63,7 +72,7 @@ class Header extends Component{
                         <div className={this.props.headerClass===3 ? "header-selected" : null} onClick={()=> this.switchImg(3)}>
                         <div className="header-text">
                         <h3 className="number">03 </h3>
-                        <h3> FIRST PASSENGER ON LUNAR BFR<br/>
+                        <h3> FIRST PASSENGER ON LUNAR BFR <br/>
                             MISSION</h3>
                         </div>
                         </div>
@@ -76,7 +85,8 @@ class Header extends Component{
 const mapStateToProps = (state) =>{
     return{
         jumboImg: state.jumboImg,
-        headerClass: state.headerClass
+        headerClass: state.headerClass,
+        mobileStyle: state.mobileStyle     
     }
 }
 
@@ -87,3 +97,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
+

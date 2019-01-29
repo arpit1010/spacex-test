@@ -1,7 +1,4 @@
 import React from "react";
-import makeCarousel from 'react-reveal/makeCarousel';
-import Slide from 'react-reveal/Slide';
-import styled, { css } from 'styled-components';
 
 const About = () => {
 
@@ -33,11 +30,8 @@ return (
       <p className="prefooter-logoP">HAWTHORNE, CALIFORNIA</p>
     </div>
 
-
 </section>
-  )
-    
-    
+  )  
 }
 
 export default About; 
