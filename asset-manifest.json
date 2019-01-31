@@ -1,13 +1,13 @@
 {
-  "main.css": "/spacex-test/static/css/main.ca72bd83.chunk.css",
-  "main.js": "/spacex-test/static/js/main.bde2ba5a.chunk.js",
-  "main.js.map": "/spacex-test/static/js/main.bde2ba5a.chunk.js.map",
+  "main.css": "/spacex-test/static/css/main.34f68ba3.chunk.css",
+  "main.js": "/spacex-test/static/js/main.3d121361.chunk.js",
+  "main.js.map": "/spacex-test/static/js/main.3d121361.chunk.js.map",
   "static/js/1.3bb6e7cd.chunk.js": "/spacex-test/static/js/1.3bb6e7cd.chunk.js",
   "static/js/1.3bb6e7cd.chunk.js.map": "/spacex-test/static/js/1.3bb6e7cd.chunk.js.map",
   "runtime~main.js": "/spacex-test/static/js/runtime~main.b0e5c5e4.js",
   "runtime~main.js.map": "/spacex-test/static/js/runtime~main.b0e5c5e4.js.map",
-  "static/css/main.ca72bd83.chunk.css.map": "/spacex-test/static/css/main.ca72bd83.chunk.css.map",
+  "static/css/main.34f68ba3.chunk.css.map": "/spacex-test/static/css/main.34f68ba3.chunk.css.map",
   "index.html": "/spacex-test/index.html",
-  "precache-manifest.09a6255f37177b8ca0dc07e66e19841c.js": "/spacex-test/precache-manifest.09a6255f37177b8ca0dc07e66e19841c.js",
+  "precache-manifest.8630b916ceede35b228192067e6ee836.js": "/spacex-test/precache-manifest.8630b916ceede35b228192067e6ee836.js",
   "service-worker.js": "/spacex-test/service-worker.js"
 }
